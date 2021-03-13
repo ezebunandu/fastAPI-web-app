@@ -1,12 +1,16 @@
-from fastapi import FastAPI
+import fastapi
 import uvicorn
 
-app = FastAPI()
+app = fastapi.FastAPI()
 
 
 @app.get("/")
 def index():
-    return "Hello World!"
+    content = """
+    <h1>Hello FastAPI Web App</h1>
+    <div>This is where our clone pypi app will live!</div>
+    """
+    return fastapi.responses.HTMLResponse(content=content)
 
 
 if __name__ == "__main__":
