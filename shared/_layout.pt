@@ -4,11 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PyPI</title>
-    <style>
-        body {
-            background: aquamarine;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/site.css">
 </head>
 
 <body>
